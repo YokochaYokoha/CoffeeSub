@@ -87,7 +87,7 @@ body {
 <h2>LatestNews-最新情報↓</h2>
 <marquee>iOS対応Coffeeブラウザー誕生!Safari等のブラウザーを使用してホーム画面に配置するだけで、インストールが完了します!あなたのお気に入りのブラウザーをCoffee化するサブブラウザーです!</marquee>
 <br>
-    <button onclick="pwains()">横茶横葉のサイトをPWAとしてインストール</button>
+    <button onclick="pwa()">横茶横葉のサイトをPWAとしてインストール</button>
 <br>
 <p>CoffeeUI:©YokochaYokoha All Rights Reserved.</p>
 <a href="https://yokochayokoha.github.io">横茶横葉(製作者)のサイト</a>
@@ -135,10 +135,11 @@ window.addEventListener('beforeinstallprompt', (e) => {
           ptxt.focus();
           document.exeCommand("paste");
          }
-        function pwains()
+        function pwa()
             {
 
-            button.addEventListener('click', (e) => {
+         
+                
   
             deferredPrompt.prompt();
                });
