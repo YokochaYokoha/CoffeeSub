@@ -1,8 +1,8 @@
 {
-  "name": "横茶横葉PWA版アプリ",
-  "short_name": "横茶横葉",
-  "start_url": "/",
-  "display": "standalone",
+  "name": "CoffeeSub",
+  "short_name": "CoffeeSub",
+  "start_url": "/CoffeeSub",
+  "display": "fullscreen",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "icons": [{
@@ -11,6 +11,6 @@
     "type": "image/webp"
   },{
     "src": "./hd_hi.ico",
-    "sizes": "72x72 96x96 128x128 256x256"
+    "sizes": "256x256"
   }]
 }
