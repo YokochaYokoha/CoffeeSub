@@ -3,7 +3,8 @@ var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
   './backpic3.png',
   './csub.png',
-  './hd_hi.ico'
+  './hd_hi.ico',
+  './lowres.webp'
 ];
 
 
