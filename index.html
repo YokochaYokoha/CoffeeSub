@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="manifest" href="/manifest.json">
     <title>CoffeeSub | Web版Coffeeブラウザー</title>
     <style>
 .searchdel {
@@ -93,6 +94,12 @@ body {
 <p>Background Image:©Mikan All Rights Reserved.</p>
 <p>Ver.1.0 ©YokochaYokoha All Rights Reserved.</p>
     <script>
+        if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js');
+  });
+}
+
         function deletequery() 
         {
 
