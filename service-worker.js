@@ -4,7 +4,6 @@ var urlsToCache = [
   './backpic3.png',
   './csub.png',
   './hd_hi.ico'
-  './lowres.webp'
 ];
 
 
