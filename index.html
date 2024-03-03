@@ -101,15 +101,8 @@ body {
   });
 }
 
-        let deferredPrompt;
 
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  
-  deferredPrompt = e;
-  
-  showInstallButton();
-});
+
 
 
         function deletequery() 
@@ -138,10 +131,9 @@ window.addEventListener('beforeinstallprompt', (e) => {
         function pwa()
             {
 
-         
-                
-  
-            deferredPrompt.prompt();
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+    showInstallButton();
             
             }
 
