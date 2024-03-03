@@ -1,6 +1,6 @@
 {
-  "name": "CoffeeSub-PWA版Coffee",
-  "short_name": "CoffeeSub",
+  "name": "横茶横葉PWA版アプリ",
+  "short_name": "横茶横葉",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
