@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CoffeeSub-Web版Coffeeブラウザー</title>
+    <style>
+.searchdel {
+   button {
+            padding: 10px 20px;
+            background: #e61919;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+   
+}
+  .coffeetitlecontainer {
+            display: flex;
+            align-items: center;  
+        }
+        h1 {
+            background-color: white;
+            margin-left: 20px;  
+        }
+img {
+border: none;
+}
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #fff;
+            color: #111;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #303F9F;
+        }
+body {
+            background-image: url('./backpic3.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<div class="coffeetitlecontainer">
+<img src="./csub.png" alt="バナー画像" width="7%">
+<h1>CoffeeSub[Web版Coffee]</h1>
+</div>
+<br>
+
+<br>
+<div class="searchdel">
+    <input type="text" id="searchQuery" placeholder="ここに入力して検索">
+
+<button onclick="deletequery()">削除</button>
+</div>
+<br>
+    <button onclick="searchGoogle()">Google検索</button>
+    <button onclick="searchDuck()">DuckDuckGo検索</button>
+    <button onclick="g2url()">URL</button>
+<br>
+    <button onclick="searchYT()">YouTube検索</button>
+    <button onclick="searchNico()">ニコニコ動画検索</button>
+    <button onclick="searchYm()">YouTubeMusic検索</button>
+
+<br>
+<br>
+<h2>LatestNews-最新情報↓</h2>
+<marquee>iOS対応Coffeeブラウザー誕生!Safari等のブラウザーを使用してホーム画面に配置するだけで、インストールが完了します!あなたのお気に入りのブラウザーをCoffee化するサブブラウザーです!</marquee>
+<br>
+<br>
+<p>CoffeeUI:©YokochaYokoha All Rights Reserved.</p>
+<a href="https://yokochayokoha.github.io">横茶横葉(製作者)のサイト</a>
+<a href="https://sites.google.com/view/coffeebr">Coffeeプロジェクトオフィシャルサイト!</a>
+<p>Background Image:©Mikan All Rights Reserved.</p>
+<p>Ver.1.0 ©YokochaYokoha All Rights Reserved.</p>
+    <script>
+        function deletequery() 
+        {
+
+        document.getElementById('searchQuery').value="";
+
+        }
+
+        function cpy() 
+        {
+
+        var ctxt =document.getElementById('searchQuery')[0];
+        ctxt.select();
+        document.exeCommand("copy");
+
+        }
+     
+        function pst()
+        {
+        
+          var ptxt=document.getElementById('searchQuery');
+          ptxt.focus();
+          document.exeCommand("paste");
+         }
+
+        function searchGoogle() 
+         {
+            var query = document.getElementById('searchQuery').value;
+            if (query) {
+                var url = "https://www.google.co.jp/search?q=" + encodeURIComponent(query);
+
+                window.location.href = url;
+
+            } else {
+                window.location.href = "https://www.google.co.jp"
+            }
+        }
+
+        function searchDuck() 
+         {
+            var query = document.getElementById('searchQuery').value;
+            if (query) {
+                var url = "https://duckduckgo.com/?q=" + encodeURIComponent(query);
+                window.location.href = url;
+
+            } else {
+                window.location.href = "https://duckduckgo.com/"
+            }
+        }
+
+        function g2url() 
+         {
+            var query = document.getElementById('searchQuery').value;
+            if (query) {
+                var url = query;
+                window.location.href = url;
+
+            } else {
+       alert('検索ボックス内にURLが入力されていません。入力をお願いいたします。');
+            }
+        }
+
+        function searchYT() 
+         {
+            var query = document.getElementById('searchQuery').value;
+            if (query) {
+                var url = "https://www.youtube.com/results?search_query=" + encodeURIComponent(query);
+document.cookie = "URL:" + "expires=60;" + "path=/";
+                window.location.href = url;
+
+            } else {
+                window.location.href = "https://www.youtube.com"
+            }
+        }
+
+        function searchNico() 
+         {
+            var query = document.getElementById('searchQuery').value;
+            if (query) {
+                var url = "https://sp.nicovideo.jp/search/" + encodeURIComponent(query);
+document.cookie = "URL:" + "expires=60;" + "path=/";
+                window.location.href = url;
+
+            } else {
+                window.location.href = "https://sp.nicovideo.jp"
+            }
+        }
+
+        function searchYm() 
+         {
+            var query = document.getElementById('searchQuery').value;
+            if (query) {
+                var url = "https://music.youtube.com/search?q=" + encodeURIComponent(query);
+document.cookie = "URL:" + "expires=60;" + "path=/";
+                window.location.href = url;
+
+            } else {
+                window.location.href = "https://music.youtube.com"
+            }
+        }
+    </script>
+</body>
+</html>
