@@ -6,10 +6,6 @@
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "icons": [{
-    "src": "./lowres.webp",
-    "sizes": "48x48",
-    "type": "image/webp"
-  },{
     "src": "./hd_hi.ico",
     "sizes": "256x256"
   }]
