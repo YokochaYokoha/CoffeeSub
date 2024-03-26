@@ -86,6 +86,7 @@ body {
 <br>
     <br>
     <button onclick="readqr()">QRコード読み取り(一部機種非対応機能)</button>
+    <a href="https://yokochayokoha.github.io/CoffeeSub/coffeeqr"><button>Coffeeブラウザーの方はこちらからQRコードを読み取ります!</button></a>
     <div id="capwindow">
     </div>
 <br>
@@ -129,14 +130,7 @@ body {
         function readqr() {
 function resqr(getqr,res)
     {
-        var usav=window.navigator.userAgent;
-        //Coffee(coffee)Detection(独自リーダーを使用。Webview内でカメラ起動、画像選択不可のため。)
-        if(usav.includes("offee"))
-        {
-            window.location.href="https://yokochayokoha.github.io/CoffeeSub/coffeeqr";
-        }
-        else
-        {
+
 if (getqr.includes("."))
 {
 
@@ -153,7 +147,7 @@ if (getqr.includes("."))
             qrscn.render(resqr);
             console.log("invoke");
         }
-    }
+    
         }
         function goqr() 
          {
