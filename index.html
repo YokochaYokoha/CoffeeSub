@@ -84,8 +84,20 @@ body {
 
 <br>
 <br>
+        <br>
+    <div class="mkqr">
+    <input type="text" id="qrmoji" placeholder="QRコード化するURL(文字)を入力">
+
+<button onclick="deletequeryqr()">削除</button>
+     
+    
+</div>
+       <button onclick="goqr()">QRコードを生成</button>
+    <p>注意:外部APIを使用するため、個人情報やその他機密情報等の大切な情報の入力はお控えください。</p>
+    <br>
+    <br>
 <h2>LatestNews-最新情報↓</h2>
-<marquee>iOS対応Coffeeブラウザー誕生!Safari等のブラウザーを使用してホーム画面に配置するだけで、インストールが完了します!あなたのお気に入りのブラウザーをCoffee化するサブブラウザーです!</marquee>
+<marquee>現在、メンテナンス作業中です。一部機能が正常にご利用いただけなくなる場合がございます。(リアルタイムアップデート作業中)</marquee>
 <br>
     
 <br>
@@ -109,6 +121,26 @@ body {
 
         }
 
+        function goqr() 
+         {
+            var query = document.getElementById('qrmoji').value;
+            if (query) {
+                var url = "https://api.qrserver.com/v1/create-qr-code/?data=" + query;
+
+                window.location.href = url;
+
+            } else {
+                alert("QRコード化する文字が正しく読み取れませんでした。テキストボックスに入力されているかを再度ご確認下さい。");
+            }
+        }
+
+        function deletequeryqr() 
+        {
+
+        document.getElementById('qrmoji').value="";
+
+        }
+        
         function cpy() 
         {
 
