@@ -127,20 +127,10 @@ body {
         document.getElementById('searchQuery').value="";
 
         }
-        function readqr() {
+       
 function resqr(getqr,res)
     {
-        console.log("chk");
-        var usav=window.navigator.userAgent;
-        //Coffee(coffee)Detection(独自リーダーを使用。Webview内でカメラ起動、画像選択不可のため。)
-        if(window.navigator.userAgent.includes("offee"))
-        if(usav.includes("offee"))
-        {
-            window.location.href="https://yokochayokoha.github.io/CoffeeSub/coffeeqr";
-        }
-        else
-        {
-            console.log("endc");
+       
 if (getqr.includes("."))
 {
 
@@ -151,14 +141,25 @@ if (getqr.includes("."))
       document.getElementById('searchQuery').value=getqr;
     alert("読み取ったテキストを検索ボックスに書き込みました。読み取った文字:"+getqr);
 }
+        }
+ function readqr() {
+              var usav=window.navigator.userAgent;
+        //Coffee(coffee)Detection(独自リーダーを使用。Webview内でカメラ起動、画像選択不可のため。)
+        if(usav.includes("offee"))
+        {
+            window.location.href="https://yokochayokoha.github.io/CoffeeSub/coffeeqr";
+        }
+        else
+        {
     console.log("CHk PT1");
        let qrscn =new Html5QrcodeScanner("capwindow",{fps:24, qrbos: 260});
             console.log("CHK PT2");
             qrscn.render(resqr);
             console.log("invoke");
         }
-    }
-        }
+ }
+    
+        
         
         function goqr() 
          {
