@@ -110,7 +110,8 @@ body {
 <a href="https://yokochayokoha.github.io">横茶横葉(製作者)のサイト</a>
 <a href="https://sites.google.com/view/coffeebr">Coffeeプロジェクトオフィシャルサイト!</a>
 <p>Background Image:©Mikan All Rights Reserved.</p>
-<p>Ver.1.0 ©YokochaYokoha All Rights Reserved.</p>
+<p>Ver.2.0 ©YokochaYokoha All Rights Reserved.</p>
+    <a href="https://yokochayokoha.github.io/CoffeeSub/thanks"><button>オープンソースライセンス表示(osl),権利表記(©)とスペシャルサンクス(Thanks!)</button></a>
     <script>
         if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
@@ -128,7 +129,14 @@ body {
         function readqr() {
 function resqr(getqr,res)
     {
-if (getqr.includes("http"))
+        //Coffee(coffee)Detection(独自リーダーを使用。Webview内でカメラ起動、画像選択不可のため。)
+        if(window.navigator.useragent.includes("offee"))
+        {
+            window.location.href="https://yokochayokoha.github.io/CoffeeSub/coffeeqr";
+        }
+        else
+        {
+if (getqr.includes("."))
 {
 
     window.location.href=getqr;
@@ -138,12 +146,13 @@ if (getqr.includes("http"))
       document.getElementById('searchQuery').value=getqr;
     alert("読み取ったテキストを検索ボックスに書き込みました。読み取った文字:"+getqr);
 }
-    }
+    
        let qrscn =new Html5QrcodeScanner("capwindow",{fps:24, qrbos: 260});
             qrscn.render(resqr);
         }
         function goqr() 
          {
+             
             var query = document.getElementById('qrmoji').value;
             if (query) {
                 var url = "https://api.qrserver.com/v1/create-qr-code/?data=" + query;
