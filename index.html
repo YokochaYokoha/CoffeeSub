@@ -104,6 +104,12 @@ body {
         document.getElementById('searchQuery').value="";
 
         }
+        function deletequeryqr() 
+        {
+
+        document.getElementById('qrmoji').value="";
+
+        }
 
         function cpy() 
         {
@@ -135,6 +141,19 @@ body {
             }
         }
 
+        function goqr() 
+         {
+            var query = document.getElementById('qrmoji').value;
+            if (query) {
+                var url = "https://api.qrserver.com/v1/create-qr-code/?data=" + query;
+
+                window.location.href = url;
+
+            } else {
+                alert("QRコード化する文字が正しく読み取れませんでした。テキストボックスに入力されているかを再度ご確認下さい。");
+            }
+        }
+        
         function searchDuck() 
          {
             var query = document.getElementById('searchQuery').value;
