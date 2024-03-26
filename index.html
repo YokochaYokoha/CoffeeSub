@@ -145,6 +145,7 @@ if (getqr.includes("."))
 {
 var gc=getqr;
     qrscn.pause(true);
+    qrscn.clear();
     window.location.href=gc;
 }        
         else
@@ -152,6 +153,7 @@ var gc=getqr;
       document.getElementById('searchQuery').value=getqr;
     alert("読み取ったテキストを検索ボックスに書き込みました。読み取った文字:"+getqr);
     qrscn.pause(true);
+    qrscn.clear();
 }
         
         }
