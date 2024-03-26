@@ -146,9 +146,11 @@ if (getqr.includes("."))
       document.getElementById('searchQuery').value=getqr;
     alert("読み取ったテキストを検索ボックスに書き込みました。読み取った文字:"+getqr);
 }
-    
+    console.log("CHk PT1");
        let qrscn =new Html5QrcodeScanner("capwindow",{fps:24, qrbos: 260});
+            console.log("CHK PT2");
             qrscn.render(resqr);
+            console.log("invoke");
         }
     }
         }
