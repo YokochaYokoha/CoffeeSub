@@ -61,6 +61,7 @@ body {
     </style>
 </head>
 <body>
+    <script src="https://unpkg.com/html5-qrcode"></script>
 <div class="coffeetitlecontainer">
 <img src="./csub.png" alt="バナー画像" width="7%">
 <h1>Coffee Sub</h1>
@@ -83,6 +84,8 @@ body {
     <button onclick="searchYm()">YouTubeMusic検索</button>
 
 <br>
+    <br>
+    <button onclick="readqr()">QRコード読み取り(一部機種非対応機能)</button>
 <br>
         <br>
     <div class="mkqr">
@@ -120,7 +123,23 @@ body {
         document.getElementById('searchQuery').value="";
 
         }
+        function () {
+function resqr(getqr,res)
+    {
+if (getqr.includes("http"))
+{
 
+    window.location.href=getqr;
+}        
+        else
+{
+      document.getElementById('searchQuery').value=getqr;
+    alert("読み取ったテキストを検索ボックスに書き込みました。読み取った文字:"+getqr);
+}
+    }
+       let qrscn =new Html5QrcodeScanner("capwindow",{fps:24, qrbos: 260});
+            qrscn.render(getqr);
+        }
         function goqr() 
          {
             var query = document.getElementById('qrmoji').value;
@@ -157,15 +176,8 @@ body {
           ptxt.focus();
           document.exeCommand("paste");
          }
-        function sea()
-            {
 
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-    showInstallButton();
-            
-            });
-                        }
+                        
 
         function searchGoogle() 
          {
