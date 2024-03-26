@@ -140,16 +140,18 @@ body {
        
 function resqr(getqr,res)
     {
-       qrscn.pause(true);
+       
 if (getqr.includes("."))
 {
-
-    window.location.href=getqr;
+var gc=getqr;
+    qrscn.pause(true);
+    window.location.href=gc;
 }        
         else
 {
       document.getElementById('searchQuery').value=getqr;
     alert("読み取ったテキストを検索ボックスに書き込みました。読み取った文字:"+getqr);
+    qrscn.pause(true);
 }
         
         }
