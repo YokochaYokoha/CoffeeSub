@@ -113,7 +113,7 @@ body {
     <br>
     <br>
 <h2>LatestNews-最新情報↓</h2>
-<marquee>Ver.2.0へアップデートしました!QRコードの入出力が可能になりました!デザインは次回のアップデートより改善していく予定です!</marquee>
+<marquee>Ver.2.2へアップデートしました!QRコードの入出力が可能になりました!デザインは次回のアップデートより改善していく予定です!</marquee>
 <br>
     
 <br>
@@ -121,7 +121,7 @@ body {
 <a href="https://yokochayokoha.github.io">横茶横葉(製作者)のサイト</a>
 <a href="https://sites.google.com/view/coffeebr">Coffeeプロジェクトオフィシャルサイト!</a>
 <p>Background Image:©Mikan All Rights Reserved.</p>
-<p>Ver.2.1b ©YokochaYokoha All Rights Reserved.</p>
+<p>Ver.2.2 ©YokochaYokoha All Rights Reserved.</p>
     <a href="https://yokochayokoha.github.io/CoffeeSub/thanks"><button>オープンソースライセンス表示(osl),権利表記(©)とスペシャルサンクス(Thanks!)</button></a>
     <script>
         if ('serviceWorker' in navigator) {
@@ -140,21 +140,8 @@ body {
        
 function resqr(getqr,res)
     {
-       
-if (getqr.includes("."))
-{
-var gc=getqr;
-    qrscn.pause(true);
-    qrscn.clear();
-    window.location.href=gc;
-}        
-        else
-{
       document.getElementById('searchQuery').value=getqr;
-    alert("読み取ったテキストを検索ボックスに書き込みました。読み取った文字:"+getqr);
-    qrscn.pause(true);
-    qrscn.clear();
-}
+    alert("読み取ったテキストを検索ボックスに書き込みました。URLの場合はそのままURLボタンを、文字の場合は各種検索ボタンを押して下さい。読み取った文字:"+getqr);
         
         }
  function readqr() {
