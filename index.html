@@ -129,8 +129,9 @@ body {
         function readqr() {
 function resqr(getqr,res)
     {
+        var usav=window.navigator.userAgent;
         //Coffee(coffee)Detection(独自リーダーを使用。Webview内でカメラ起動、画像選択不可のため。)
-        if(window.navigator.userAgent.includes("offee"))
+        if(usav.includes("offee"))
         {
             window.location.href="https://yokochayokoha.github.io/CoffeeSub/coffeeqr";
         }
