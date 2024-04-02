@@ -1,4 +1,5 @@
-# CoffeeSub ブラウザーのホームページに!  
+# CoffeeSub Set as your favorite browsers' homepage!  
+## お好みのブラウザーのメインページにセットして使う新しいCoffeeブラウザー!  
 ![画像](./rev2.png "画像")　　
 
 Web版Coffeeブラウザー! ついにiOS、iPadOSにも対応!(無理やりですが...)  
