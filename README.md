@@ -15,3 +15,10 @@ Main Branch is not "the main branch"."CoffeeSub" is the very branch I've been wo
 
 https://github.com/YokochaYokoha/CoffeeSub/tree/Coffee_Sub  
 ↑ CoffeeSub branch!
+## スペシャルサンクス(Special Thanks!)  
+Html5-qrcode(QRコード読み取り機能)  
+https://github.com/mebjas/html5-qrcode  
+
+Ms.Mikan Mikan氏(Assets　アセット)  
+
+And You! そして、見てくれているあなたです!  
