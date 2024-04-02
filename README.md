@@ -7,5 +7,5 @@ https://yokochayokoha.github.io/CoffeeSub
 M x
 CS O
 ## 注意  
-Main Branch is not "the main branch"."CoffeeSub" is the very branch I've been working now.(I'm not sure how to use github...Sorry for that.... This is my mistake.)  
+Main Branch is not "the main branch"."CoffeeSub" is the very branch I've been working on now.(I'm not sure how to use github...sorry for that.... This is my mistake.)  
 メインのブランチは本当のメインではありません。使い方がよくわからないので2つになってしまいました...CoffeeSubって名前のブランチこそが本物のソースコードを含んだ方です。メインのほうは資材置き場(?)みたいな感じです。  
