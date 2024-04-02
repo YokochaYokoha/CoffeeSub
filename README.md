@@ -1,4 +1,4 @@
-# CoffeeSub  
+# CoffeeSub ブラウザーのホームページに!  
 ![画像](./rev2.png "画像")　　
 
 Web版Coffeeブラウザー! ついにiOS、iPadOSにも対応!(無理やりですが...)  
