@@ -1,4 +1,4 @@
-# CoffeeSub Set as your favorite browsers' homepage!  
+# CoffeeSub Set as the home page of your favorite browser!  
 ## お好みのブラウザーのメインページにセットして使う新しいCoffeeブラウザー!  
 ![画像](./rev2.png "画像")　　
 
