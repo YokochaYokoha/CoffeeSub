@@ -28,7 +28,11 @@
   width: 200px;
         }
         }
-
+  .toolbar {
+      font-family: sans-serif ;
+            display: flex;
+            align-items: center;  
+        }
   .coffeetitlecontainer {
       font-family: sans-serif ;
             display: flex;
@@ -111,9 +115,12 @@ body {
        <button onclick="goqr()">QRコードを生成</button>
     <p>注意:外部APIを使用するため、個人情報やその他機密情報等の大切な情報の入力はお控えください。</p>
     <br>
-    <p>現在製作中(Coming soon!)</p>
-    <img src="https://github.com/YokochaYokoha/YokochaYokoha/blob/main/qr.png?raw=true" alt="QRコードを読み取る" width="7%">
-    <br>
+    <p>現在製作中(試験運用中)</p>
+    <div class="toolbar">
+    <a onclick="readqr()"><img src="https://github.com/YokochaYokoha/YokochaYokoha/blob/main/qr.png?raw=true" alt="QRコードを読み取る" width="7%"></a>
+    <p>読み取り</p>
+    </div>
+        <br>
 <h2>LatestNews-最新情報↓</h2>
 <marquee>Ver.2.2へアップデートしました!QRコードの入出力が可能になりました!デザインは次回のアップデートより改善していく予定です!</marquee>
 <br>
@@ -123,7 +130,7 @@ body {
 <a href="https://yokochayokoha.github.io">横茶横葉(製作者)のサイト</a>
 <a href="https://sites.google.com/view/coffeebr">Coffeeプロジェクトオフィシャルサイト!</a>
 <p>Background Image:©Mikan All Rights Reserved.</p>
-<p>Ver.2.2 ©YokochaYokoha All Rights Reserved.</p>
+<p>Ver.2.3 ©YokochaYokoha All Rights Reserved.</p>
     <a href="https://yokochayokoha.github.io/CoffeeSub/thanks"><button>オープンソースライセンス表示(osl),権利表記(©)とスペシャルサンクス(Thanks!)</button></a>
     <script>
         if ('serviceWorker' in navigator) {
