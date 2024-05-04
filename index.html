@@ -101,15 +101,11 @@ body {
 <br>
     <button onclick="searchYT()">YouTube検索</button>
     <button onclick="searchNico()">ニコニコ動画検索</button>
-    <button onclick="searchYm()">YouTubeMusic検索</button>
+    <!--<button onclick="searchYm()">YouTubeMusic検索</button>--!>
 
 <br>
-    <br>
-    <button onclick="readqr()">QRコード読み取り(一部機種非対応機能)</button>
-    <div id="capwindow">
-    </div>
 <br>
-        <br>
+<br>
     <div id="mkqr">
     <input type="text" id="qrmoji" placeholder="QRコード化するURL(文字)を入力">
 
@@ -120,10 +116,13 @@ body {
        <button onclick="goqr()">QRコードを生成</button>
     <p>注意:外部APIを使用するため、個人情報やその他機密情報等の大切な情報の入力はお控えください。</p>
     <br>
+    <div id="capwindow">
+    </div>
     <p>現在製作中(試験運用中)</p>
     <div class="toolbar">
     <a onclick="readqr()"><img src="https://github.com/YokochaYokoha/YokochaYokoha/blob/main/qr.png?raw=true" alt="QRコードを読み取る" width="7%"></a>
     <p>読み取り</p>
+        
     </div>
         <br>
 <h2>LatestNews-最新情報↓</h2>
