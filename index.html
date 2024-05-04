@@ -106,27 +106,26 @@ body {
 <br>
 <br>
 <br>
-    <div id="mkqr">
-    <input type="text" id="qrmoji" placeholder="QRコード化するURL(文字)を入力">
-
-<button onclick="deletequeryqr()">削除</button>
-     
-    
-</div>
-       <button onclick="goqr()">QRコードを生成</button>
+ <button onclick="goqr()">QRコードを生成</button>
     <p>注意:外部APIを使用するため、個人情報やその他機密情報等の大切な情報の入力はお控えください。</p>
     <br>
     <div id="capwindow">
     </div>
+        <div id="mkqr">
+    <input type="text" id="qrmoji" placeholder="QRコード化するURL(文字)を入力">
+
+<button onclick="deletequeryqr()">削除</button>
+</div>
     <p>現在製作中(試験運用中)</p>
     <div class="toolbar">
-    <a onclick="readqr()"><img src="https://github.com/YokochaYokoha/YokochaYokoha/blob/main/qr.png?raw=true" alt="QRコードを読み取る" width="7%"></a>
+    <a onclick="readqr()"><img src="https://github.com/YokochaYokoha/YokochaYokoha/blob/main/qr.png?raw=true" alt="QRコードを読み取る" width="10%"></a>
     <p>読み取り</p>
-        
+    <a onclick="mkqrvisible()"><img src="./mkqr.png" alt="QRコード作成" width="10%"></a>
+    <p>作成機能</p>   
     </div>
         <br>
 <h2>LatestNews-最新情報↓</h2>
-<marquee>Ver.2へアップデートしました!QRコードの入出力が可能になりました!デザインは次回のアップデートより改善していく予定です!</marquee>
+<marquee>メンテナンス中です。一部の機能が正常に動作しない場合があります。完了までしばらくお待ちくださいませ!(管理者:横茶横葉より)</marquee>
 <br>
     
 <br>
@@ -150,6 +149,18 @@ body {
         document.getElementById('searchQuery').value="";
 
         }
+    const mkqrcomponents = document.getElementById('mkqr');
+    function mkqrvisible() 
+    {
+    if (mkqrcomponents.style.display === 'none')
+    {
+    mkqrcomponents.style.display='block';
+    }
+    else
+    {
+   mkqrcomponents.style.display='none';
+    }
+    }
        
 function resqr(getqr,res)
     {
