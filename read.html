@@ -12,8 +12,18 @@
   <script>
 function resqr(getqr,res)
     {
-      document.getElementById('searchQuery').value=getqr;
-    alert("読み取ったテキストを検索ボックスに書き込みました。URLの場合はそのままURLボタンを、文字の場合は各種検索ボタンを押して下さい。読み取った文字:"+getqr);
+      var gottxt=getqr;
+      if (gottxt.includes("."))
+      {
+window.location.href =gottxt;
+        
+      }
+      else
+      {
+        var url="https://www.google.co.jp/search?q=" + encodeURIComponent(gottxt);
+        window.location.href = url;
+      }
+
         
         }
  function readqr() {
