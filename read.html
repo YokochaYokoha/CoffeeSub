@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QRコード読み取り</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+      <script src="https://unpkg.com/html5-qrcode"></script>
+  <p>下のボタンから読み取りを開始できます</p>
+   <a onclick="readqr()"><img src="https://github.com/YokochaYokoha/YokochaYokoha/blob/main/qr.png?raw=true" alt="QRコードを読み取る" width="10%"></a>
+  <div id="capwindow"></div>
+  <script>
+function resqr(getqr,res)
+    {
+      document.getElementById('searchQuery').value=getqr;
+    alert("読み取ったテキストを検索ボックスに書き込みました。URLの場合はそのままURLボタンを、文字の場合は各種検索ボタンを押して下さい。読み取った文字:"+getqr);
+        
+        }
+ function readqr() {
+              var usav=window.navigator.userAgent;
+       let qrscn =new Html5QrcodeScanner("capwindow",{fps:24, qrbos: 260});
+            console.log("CHK PT2");
+            qrscn.render(resqr);
+            console.log("invoke");
+            
+        }
+ }
+    
+  </script>
+</body>
+</html>
