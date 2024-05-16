@@ -10,10 +10,26 @@
   width: 200px;
         }
         }
+        .titlecontainer {
+      font-family: sans-serif ;
+            display: flex;
+            align-items: center;  
+        }
+        h1 {
+            background-color: white;
+            margin-left: 20px;  
+        }
+img {
+border: none;
+}
   </style>
 </head>
 <body>
-  <h1>FastQR - Web版速作成QR(二次元コード作成支援)</h1>
+    <div class="titlecontainer">
+<img src="./mkqr.png" alt="バナー画像" width="7%">
+<h1>FastQR - Web版速作成QR(二次元コード作成支援)</h1>
+</div>
+  
     </div>
         <div id="mkqr">
     <input type="text" id="qrmoji" placeholder="QRコード化するURL(文字)を入力">
